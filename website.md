@@ -11,3 +11,8 @@
 
 ## w3schools.com
 - <a href="https://www.w3schools.com/java/default.asp" target="_blank">w3schools Java</a>
+
+# 자바 유튜브 사이트 주소
+
+## 뉴렉처
+- https://www.youtube.com/watch?v=CDEH5Pshu5I&list=PLq8wAnVUcTFVumZtWpBeZgK3iDEXmiMA1
