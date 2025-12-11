@@ -1,9 +1,9 @@
 # 자바 웹사이트 주소
 
-## https://wikidocs.net/book/31
+## wikidocs.net
 - <a href="https://www.wikidocs.net/book/31" target="_blank">wikidocs Java</a>
 
-## https://www.tutorialspoint.com/java/index.htm
+## tutorialspoint.com
 - <a href="https://www.www.tutorialspoint.com/java/index.htm" target="_blank">tutorialspoint Java</a>
 
 ## geeksforgeeks.org
