@@ -2,5 +2,8 @@
 
 ## https://wikidocs.net/book/31
 ## https://www.tutorialspoint.com/java/index.htm
-## [www.geeksforgeeks.org](https://www.geeksforgeeks.org/java/java/)
+
+## geeksforgeeks.org
+<a href="https://www.geeksforgeeks.org/java/java/" target="_blank">GeeksforGeeks Java</a>
+
 ## [www.w3schools.com](https://www.w3schools.com/java/default.asp)
