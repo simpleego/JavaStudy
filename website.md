@@ -2,7 +2,8 @@
 --- 
 
 ## wikidocs.net
-- <a href="https://www.wikidocs.net/book/31" target="_blank">wikidocs Java</a>
+- <a href="https://www.wikidocs.net/book/31" target="_blank">점프 투 자바</a>
+- <a href="https://www.wikidocs.net/book/9046" target="_blank">자바 신공</a>
 
 ## tutorialspoint.com
 - <a href="https://www.www.tutorialspoint.com/java/index.htm" target="_blank">tutorialspoint Java</a>
