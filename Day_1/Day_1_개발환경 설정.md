@@ -133,4 +133,4 @@ public class SimpleHello {
     Hello, Java World! - from Memo Pad
     ```
 
-이 과정을 통해 학생들은 자바 코드가 IDE의 도움 없이 어떻게 컴파일러(`javac`)를 통해 바이트코드가 되고, 최종적으로 JVM(`java`)을 통해 실행되는지 기본적인 원리를 이해할 수 있습니다.
+이 과정을 통해 자바 코드가 IDE의 도움 없이 어떻게 컴파일러(`javac`)를 통해 바이트코드가 되고, 최종적으로 JVM(`java`)을 통해 실행되는지 기본적인 원리를 이해할 수 있습니다.
