@@ -148,3 +148,48 @@ public class TernaryExample3 {
 | 선택 연산 | 최대값, 최소값 | 변수 대입에 유용 |
 
 ---
+
+## 🧩 예제 1: 중첩 삼항 연산자 (성적 등급 판별)
+```java
+public class NestedTernary {
+    public static void main(String[] args) {
+        int score = 82;
+
+        String grade = (score >= 90) ? "A"
+                       : (score >= 80) ? "B"
+                       : (score >= 70) ? "C"
+                       : "D";
+
+        System.out.println("학점: " + grade);  // 출력: 학점: B
+    }
+}
+```
+👉 여러 조건을 한 줄로 표현할 수 있지만, 가독성이 떨어질 수 있으므로 **조건이 단순할 때만** 쓰는 게 좋습니다.
+
+---
+
+## 🧩 예제 2: 메서드 호출과 함께 사용 (짝수/홀수 + 절대값)
+```java
+public class MethodTernary {
+    public static void main(String[] args) {
+        int number = -7;
+
+        String result = (number % 2 == 0) 
+                        ? "짝수, 절대값: " + Math.abs(number)
+                        : "홀수, 절대값: " + Math.abs(number);
+
+        System.out.println(result);  // 출력: 홀수, 절대값: 7
+    }
+}
+```
+👉 삼항 연산자 안에서 **메서드 호출**을 활용해 조건에 따라 다른 메시지를 출력.
+
+---
+
+## ✨ 요약
+- **중첩 삼항 연산자**: 여러 조건을 한 줄로 표현 가능.
+- **메서드 호출과 결합**: 조건에 따라 다른 연산이나 함수 실행 가능.
+
+---
+
+삼항 연산자는 이렇게 응용하면 꽤 강력하지만, **조건이 복잡해질수록 가독성이 떨어지므로 if문으로 바꾸는 게 더 안전**합니다.  
