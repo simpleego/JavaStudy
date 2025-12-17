@@ -1,6 +1,11 @@
-좋습니다 👍 자바에서 **if문**은 크게 세 가지 기본 형식으로 나눌 수 있습니다. 각각을 정리하고 간단한 예제를 보여드릴게요.
-
+# 제어문의 종류
+- if
+- switch ~ case
+- ?
+  
 ---
+
+# if 문
 
 ## 🟢 1. 단일 if문
 - **형식**: 조건이 참일 때만 실행.
@@ -85,6 +90,8 @@ if (score >= 90) {
 | **if-else if문**  | 여러 조건 순차 검사 | 조건이 여러 단계로 나뉠 때 |
 
 ---
+
+# 조건(삼항) 연산자
 
 ## 🔵 조건(삼항) 연산자란?
 - **형식**:  
@@ -193,3 +200,112 @@ public class MethodTernary {
 ---
 
 삼항 연산자는 이렇게 응용하면 꽤 강력하지만, **조건이 복잡해질수록 가독성이 떨어지므로 if문으로 바꾸는 게 더 안전**합니다.  
+
+
+ 
+# **switch-case 문**
+---
+
+## 🟡 switch-case 문 정리
+- **형식**:
+  ```java
+  switch (변수) {
+      case 값1:
+          실행문1;
+          break;
+      case 값2:
+          실행문2;
+          break;
+      ...
+      default:
+          실행문N;
+  }
+  ```
+- **특징**:
+  - 변수의 값에 따라 여러 분기 중 하나를 선택.
+  - `break`를 사용하지 않으면 **fall-through**(다음 case로 계속 실행) 발생.
+  - `default`는 모든 case에 해당하지 않을 때 실행.
+  - 자바 7 이후부터는 `String`도 switch에서 사용 가능.
+  - 자바 14 이후부터는 **switch 표현식**(값 반환)도 지원.
+
+---
+
+## 🧩 예제 1: 요일 출력 (기본적인 switch)
+```java
+public class SwitchExample1 {
+    public static void main(String[] args) {
+        int day = 3;
+
+        switch (day) {
+            case 1:
+                System.out.println("월요일");
+                break;
+            case 2:
+                System.out.println("화요일");
+                break;
+            case 3:
+                System.out.println("수요일");
+                break;
+            default:
+                System.out.println("기타 요일");
+        }
+    }
+}
+```
+
+---
+
+## 🧩 예제 2: 문자열 switch (자바 7 이상)
+```java
+public class SwitchExample2 {
+    public static void main(String[] args) {
+        String fruit = "apple";
+
+        switch (fruit) {
+            case "apple":
+                System.out.println("사과입니다.");
+                break;
+            case "banana":
+                System.out.println("바나나입니다.");
+                break;
+            case "orange":
+                System.out.println("오렌지입니다.");
+                break;
+            default:
+                System.out.println("알 수 없는 과일입니다.");
+        }
+    }
+}
+```
+
+---
+
+## 🧩 예제 3: switch 표현식 (자바 14 이상)
+```java
+public class SwitchExample3 {
+    public static void main(String[] args) {
+        int month = 4;
+
+        String season = switch (month) {
+            case 12, 1, 2 -> "겨울";
+            case 3, 4, 5 -> "봄";
+            case 6, 7, 8 -> "여름";
+            case 9, 10, 11 -> "가을";
+            default -> "잘못된 월";
+        };
+
+        System.out.println("계절: " + season);  // 출력: 계절: 봄
+    }
+}
+```
+
+---
+
+## ✨ 요약
+| 사용법 | 특징 |
+|--------|------|
+| 기본 switch | 정수, 문자 등 값에 따라 분기 |
+| 문자열 switch | 문자열 값 비교 가능 (자바 7+) |
+| switch 표현식 | 값을 반환하는 switch (자바 14+) |
+
+---
