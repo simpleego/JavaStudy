@@ -86,6 +86,65 @@ if (score >= 90) {
 
 ---
 
-👉 이렇게 세 가지 형식을 잘 활용하면, 상황에 맞게 조건 분기를 깔끔하게 작성할 수 있습니다.  
+## 🔵 조건(삼항) 연산자란?
+- **형식**:  
+  ```java
+  조건식 ? 참일 때 값 : 거짓일 때 값
+  ```
+- **특징**:
+  - `if-else` 문을 간단히 표현할 수 있음.
+  - 값 자체를 반환하기 때문에 변수에 바로 대입 가능.
+  - 간단한 조건 분기에 적합.
 
-혹시 원하시면, 제가 **세 가지 형식을 한 프로그램 안에서 모두 사용하는 예제**를 만들어 드릴 수도 있어요. 원하시나요?
+---
+
+## 🧩 사용 예제 1: 나이 판별
+```java
+public class TernaryExample1 {
+    public static void main(String[] args) {
+        int age = 20;
+        String result = (age >= 18) ? "성인" : "미성년자";
+        System.out.println(result);  // 출력: 성인
+    }
+}
+```
+👉 `if-else` 대신 간단히 성인/미성년자 판별.
+
+---
+
+## 🧩 사용 예제 2: 짝수/홀수 판별
+```java
+public class TernaryExample2 {
+    public static void main(String[] args) {
+        int number = 7;
+        String result = (number % 2 == 0) ? "짝수" : "홀수";
+        System.out.println(result);  // 출력: 홀수
+    }
+}
+```
+👉 수학적 조건을 간단히 표현.
+
+---
+
+## 🧩 사용 예제 3: 최대값 구하기
+```java
+public class TernaryExample3 {
+    public static void main(String[] args) {
+        int a = 10, b = 15;
+        int max = (a > b) ? a : b;
+        System.out.println("최대값: " + max);  // 출력: 최대값: 15
+    }
+}
+```
+👉 두 값 중 큰 값을 간단히 선택.
+
+---
+
+## ✨ 요약
+| 사용 상황 | 예시 | 장점 |
+|-----------|------|------|
+| 단순 분기 | 성인/미성년자 | 코드 간결 |
+| 값 판별   | 짝수/홀수 | 직관적 |
+| 선택 연산 | 최대값, 최소값 | 변수 대입에 유용 |
+
+---
