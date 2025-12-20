@@ -5,9 +5,9 @@
 - 동일한 자료형의 데이터를 **연속된 공간**에 저장.
 - 인덱스(index)를 통해 접근 (0부터 시작).
 - 크기가 고정되어 있으며, 선언 시 크기를 지정해야 함.
-- 
+** 배열구조 및 배열 초기화 값
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/da2e5b0a-2ed2-422d-8f7a-105e2c7e60a2" />
-
+---  
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/88da4f50-3554-48ac-97f5-6585e3c675b5" />
 
   
