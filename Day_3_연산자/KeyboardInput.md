@@ -39,7 +39,7 @@ Scanner scanner = new Scanner(System.in);
 
 ##📝 간단한 `Scanner` 예제 3가지
 
-###예제 1: 정수 입력받아 덧셈하기 (`nextInt()`)사용자로부터 두 개의 정수를 입력받아 합계를 출력하는 예제입니다.
+### 예제 1: 정수 입력받아 덧셈하기 (`nextInt()`)사용자로부터 두 개의 정수를 입력받아 합계를 출력하는 예제입니다.
 
 ```java
 import java.util.Scanner;
@@ -63,7 +63,7 @@ public class Example1 {
 
 ```
 
-###예제 2: 이름과 나이 입력받기 (`next()` vs `nextInt()`)문자열(이름)과 숫자(나이)를 혼합하여 입력받는 예제입니다.
+### 예제 2: 이름과 나이 입력받기 (`next()` vs `nextInt()`)문자열(이름)과 숫자(나이)를 혼합하여 입력받는 예제입니다.
 
 ```java
 import java.util.Scanner;
@@ -86,7 +86,7 @@ public class Example2 {
 
 ```
 
-###예제 3: 한 줄 전체 입력받기 (`nextLine()`)공백을 포함한 문장을 통째로 입력받아 출력하는 예제입니다.
+### 예제 3: 한 줄 전체 입력받기 (`nextLine()`)공백을 포함한 문장을 통째로 입력받아 출력하는 예제입니다.
 
 ```java
 import java.util.Scanner;
