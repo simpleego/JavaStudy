@@ -22,7 +22,7 @@ Scanner scanner = new Scanner(System.in);
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/91dbda27-6916-449f-a242-c3dcde72a69c" />
 
 
-###3. 주요 메서드  
+### 3. 주요 메서드  
 | 메서드 | 반환 타입 | 설명 |
 | --- | --- | --- |
 | `nextInt()` | `int` | 입력 버퍼에서 **정수(integer)** 값을 읽어 반환합니다. |
