@@ -8,11 +8,8 @@ public class CircleTest {
 		
 		// 원을 생성
 		Circle c1 = new Circle();
-		Circle c2 = new Circle();
-		
-		c1.setCircle(100, 5, 6);
-		c2.setCircle(10, 5, 6);
-		
+		Circle c2 = new Circle();	
+			
 		c1.setName("miniCircle");
 		c2.setName("bigCircle");
 		
