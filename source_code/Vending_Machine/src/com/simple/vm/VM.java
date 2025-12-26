@@ -52,7 +52,6 @@ public class VM {
                 }else{
                     isSale[i] = false;
                 }
-
             }
 
             // 밀크커피 판매 처리
@@ -78,35 +77,19 @@ public class VM {
             int index = menu - 1;
 
             // 선택한 메뉴가 판매 가능한지 체크
-            if(isSale[index])
-
-
-
-
-//			if (milkOk) {
-//
-//
-//
-//				switch (menu) {
-//				case 1:
-//					// 자판기가 판매금액 회수
-//					vmCoin += milkPrice;
-//					inCoin -= milkPrice;
-//					System.out.println(milkCoffee + " 나왔습니다.");
-//				}
-//
-//				// 밀크커피 상태 체크
-//				if (inCoin >= milkPrice) {
-//					milkOk = true;
-//				} else {
-//					milkOk = false;
-//				}
-//
-//				System.out.printf("%s:(%d원) %s \n", milkCoffee, milkPrice, milkOk ? "○" : "X");
-//				System.out.println("잔액 : " + inCoin);
-//			}
-
-            kbd.nextLine(); // 키보드 버퍼에 남아있는 문자열 처리
+            if(!isSale[index]){
+                System.out.println("잔액이 부족하여 구매할 수 없습니다.");
+            }else {
+                // 판매처리
+                vmCoin += coffeePrice[index];
+                inCoin -= coffeePrice[index];
+                System.out.println(coffeeNames[index]+" 나왔습니다.");
+                System.out.println(" 잔액 :"+inCoin);
+            }
+            // 판매 가능한 상태 처리
+            for (int i = 0; i < coffeePrice.length; i++) {
+                isSale[i] = inCoin >= coffeePrice[i];
+            }
 
             System.out.println("프로그램 종료 : quit 입력 ");
             quit = kbd.nextLine();
