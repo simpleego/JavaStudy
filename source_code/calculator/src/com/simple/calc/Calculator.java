@@ -1,7 +1,7 @@
 package com.simple.calc;
 
 public interface Calculator {
-    double calculator(double a,
+    double calculate(double a,
                       double b);
 }
 
@@ -11,15 +11,15 @@ abstract class AbstractCalculator implements Calculator{
         return "결과값 : " + result;
     }
 
-    public double calculator(int a, int b) {
-        return calculator((double) a, (double) b);
+    public double calculate(int a, int b) {
+        return calculate((double) a, (double) b);
     }
 }
 
 class AddCaculator extends AbstractCalculator {
 
     @Override
-    public double calculator(double a, double b) {
+    public double calculate(double a, double b) {
         return a+b;
     }
 }
@@ -27,14 +27,14 @@ class AddCaculator extends AbstractCalculator {
 class SubCaculator extends AbstractCalculator {
 
     @Override
-    public double calculator(double a, double b) {
+    public double calculate(double a, double b) {
         return a-b;
     }
 }
 class MulCaculator extends AbstractCalculator {
 
     @Override
-    public double calculator(double a, double b) {
+    public double calculate(double a, double b) {
         return a*b;
     }
 }
@@ -42,7 +42,7 @@ class MulCaculator extends AbstractCalculator {
 class DivCaculator extends AbstractCalculator {
 
     @Override
-    public double calculator(double a, double b) {
+    public double calculate(double a, double b) {
         if(b == 0) throw new ArithmeticException("0으로 나눌 수 없습니다.");
         return a/b;
     }
